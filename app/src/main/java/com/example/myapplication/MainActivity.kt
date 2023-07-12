@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.example.project1.R
 
 class MainActivity : AppCompatActivity() {
-    //checking git
+    //checking git commit,push & pull
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
