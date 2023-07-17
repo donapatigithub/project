@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.txtview)
 
         button.setOnClickListener {
-            val doller = editText.text.toString().toDouble()
-            val rupee = doller * 82.1
-            textView.setText(""+rupee+" ₹")
+            val doller = editText.text.toString().toInt()
+            val rupee = doller * 82
+            textView.setText(""+rupee+".00 ₹")
 
         }
     }
