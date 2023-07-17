@@ -2,11 +2,9 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import androidx.databinding.DataBindingUtil.setContentView
 import com.example.project1.R
 
 class MainActivity : AppCompatActivity() {
