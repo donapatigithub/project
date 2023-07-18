@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,14 +21,13 @@ class MainActivity : AppCompatActivity() {
             val doller = editText.text.toString().toInt()
             val rupee = doller * 82
             textView.setText(""+rupee+".00 ₹")
-
         }
+        onClick()
     }
     fun onClick(){
         val app1: Button = findViewById(R.id.app1)
         app1.setOnClickListener {
-
-
+            startActivity(Intent(this,SecondApp::class.java))
         }
     }
 }
