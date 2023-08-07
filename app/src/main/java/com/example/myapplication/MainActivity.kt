@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import com.example.project1.R
 
 class MainActivity : AppCompatActivity() {
@@ -18,14 +19,19 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.txtview)
 
         button.setOnClickListener {
-            val doller = editText.text.toString().toInt()
-            val rupee = doller * 82
-            textView.setText(""+rupee+".00 ₹")
+            if (editText.text.isEmpty()) {
+                Toast.makeText(applicationContext, "Invalid Input", Toast.LENGTH_LONG).show()
+            } else {
+                val doller = editText.text.toString().toInt()
+                val rupee = doller * 82
+                textView.setText("" + rupee + ".00 ₹")
+            }
         }
         onClick()
     }
     fun onClick(){
         val app1: Button = findViewById(R.id.app1)
+        app1.setText("SQFT-CENT")
         app1.setOnClickListener {
             startActivity(Intent(this,SecondApp::class.java))
         }
