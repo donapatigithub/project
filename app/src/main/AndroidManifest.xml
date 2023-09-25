@@ -30,6 +30,9 @@
         android:theme="@style/QueryTheme"
         tools:targetApi="31">
         <activity
+            android:name="com.example.myapplication.EmiCalculator"
+            android:exported="false" />
+        <activity
             android:name="com.example.myapplication.SecondApp"
             android:exported="false" />
         <activity

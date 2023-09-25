@@ -35,5 +35,9 @@ class MainActivity : AppCompatActivity() {
         app1.setOnClickListener {
             startActivity(Intent(this,SecondApp::class.java))
         }
+        val app2: Button = findViewById(R.id.app2)
+        app2.setOnClickListener{
+            startActivity(Intent(this,EmiCalculator::class.java))
+        }
     }
 }
