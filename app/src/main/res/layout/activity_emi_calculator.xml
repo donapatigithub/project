@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:padding="16dp"
+    >
+
+    <EditText
+        android:id="@+id/principalAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal Amount"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Interest Rate (%)"
+        android:inputType="numberDecimal"/>
+
+    <SeekBar
+        android:id="@+id/loanTenureSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumbOffset="10dp"
+        android:max="50"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tenureTextView"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Loan Tenure: 0 years"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Calculate"/>
+
+    <TextView
+        android:id="@+id/emiResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="24sp"/>
+
+
+</LinearLayout>

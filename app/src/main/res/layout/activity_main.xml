@@ -54,10 +54,19 @@
         android:id="@+id/app1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App1"
+        android:text="SQFT-Cent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtview"/>
+    <Button
+        android:id="@+id/app2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMI"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/app1"
         app:layout_constraintTop_toBottomOf="@id/txtview"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
