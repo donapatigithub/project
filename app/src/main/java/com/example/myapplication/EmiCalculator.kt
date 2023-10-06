@@ -69,6 +69,7 @@ class EmiCalculator : AppCompatActivity() {
         calculateButton.setOnClickListener {
         calculateEMI()
         }
+        onClick()
         }
 
     private fun calculateEMI() {
@@ -91,5 +92,11 @@ class EmiCalculator : AppCompatActivity() {
         val roundedEMI = Math.round(emi).toInt()
 
         emiResultTextView.text = "EMI: $roundedEMI"
+    }
+    fun onClick(){
+        val back: Button = findViewById(R.id.back)
+        back.setOnClickListener {
+            finish()
+        }
     }
 }
