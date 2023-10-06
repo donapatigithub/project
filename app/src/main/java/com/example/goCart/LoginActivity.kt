@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.goCart
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.project1.R
 
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     //checking git commit,push & pull
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,12 +32,6 @@ class MainActivity : AppCompatActivity() {
     fun onClick(){
         val app1: Button = findViewById(R.id.app1)
         app1.setText("SQFT-CENT")
-        app1.setOnClickListener {
-            startActivity(Intent(this,SecondApp::class.java))
-        }
-        val app2: Button = findViewById(R.id.app2)
-        app2.setOnClickListener{
-            startActivity(Intent(this,EmiCalculator::class.java))
-        }
+
     }
 }
